@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity implements TabLayout.OnTabSe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         mViewPager = findViewById(R.id.view_pager_main);
         mToolbar = findViewById(R.id.toolbar_main);
         TabLayout tabLayout = findViewById(R.id.tab_layout_main);

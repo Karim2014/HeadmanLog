@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <android.support.v7.widget.AppCompatEditText
+        style="@style/ExpandedItemEditText"
+        android:hint="@string/hint_subject_title"
+        android:id="@+id/list_item_expandeble_edit_schedule_expanded_title"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        style="@style/ExpandedItemEditText"
+        android:layout_marginTop="8dp"
+        android:hint="@string/title.teacher"
+        android:id="@+id/list_item_expandeble_edit_schedule_expanded_teacher"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        style="@style/ExpandedItemEditText.Editable"
+        android:layout_marginTop="8dp"
+        android:inputType="number"
+        android:id="@+id/list_item_expandable_edit_schedule_expanded_room"
+        android:hint="@string/couple_num"/>
+
+    <View style="@style/Separator" android:layout_marginTop="8dp"/>
+
+    <com.github.florent37.expansionpanel.ExpansionLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:expansion_expanded="true"
+        android:id="@+id/list_item_expandable_edit_schedule_expanded_exp_lay">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+            android:visibility="visible"
+            android:id="@+id/list_item_expandable_edit_schedule_lin_lay_down">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/up_week"
+                android:textSize="15sp"
+                android:textColor="@color/primaryLightColor"
+                android:layout_margin="8dp"
+                android:textAlignment="center"/>
+
+            <android.support.v7.widget.AppCompatEditText
+                style="@style/ExpandedItemEditText"
+                android:hint="@string/hint_subject_title"
+                android:id="@+id/list_item_expandeble_edit_schedule_expanded_title_down"/>
+
+            <android.support.v7.widget.AppCompatEditText
+                style="@style/ExpandedItemEditText"
+                android:layout_marginTop="8dp"
+                android:hint="@string/title.teacher"
+                android:id="@+id/list_item_expandeble_edit_schedule_expanded_teacher_down"/>
+
+            <android.support.v7.widget.AppCompatEditText
+                style="@style/ExpandedItemEditText.Editable"
+                android:layout_marginTop="8dp"
+                android:inputType="number"
+                android:id="@+id/list_item_expandable_edit_schedule_expanded_room_down"
+                android:hint="@string/couple_num"/>
+
+            <View style="@style/Separator" android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+
+    </com.github.florent37.expansionpanel.ExpansionLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:id="@+id/list_item_expandable_edit_schedule_checkbox_down"
+            android:layout_margin="8dp"
+            android:text="@string/up_week"
+            android:textColor="@color/primaryDarkColor"
+            android:textSize="14sp"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="8dp"
+            android:text="@string/save"
+            style="@style/Base.Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:id="@+id/list_item_expandable_edit_schedule_save_btn"/>
+
+    </FrameLayout>
+</LinearLayout>

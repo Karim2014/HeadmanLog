@@ -1,0 +1,82 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+          package="com.karimsabitov.headmanlog"
+    >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="5adb38e1e1205a1a7420e571e6129edc278b2ed3" />
+
+        <activity
+            android:name=".students.StudentViewPager"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".students.StudentListActivity"
+            android:label="@string/appbar_group"
+            android:parentActivityName=".students.StudentAboutActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".schedule.fragment_activities.ScheduleTabViewPager"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"
+            android:label="@string/lists_label">
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".schedule.fragment_activities.ScheduleEditActivity"
+            android:label="@string/label.edit_schedule"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".settings.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".attendance.fragments_activities.AttendanceListActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".MainActivity"
+            android:label=""
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name=".schedule.fragment_activities.BellActivity"
+                  android:theme="@style/AppTheme"
+                  android:label="Расписание звонков">
+
+        </activity>
+
+        <activity android:name=".students.StudentAboutActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+
+    </application>
+
+</manifest>

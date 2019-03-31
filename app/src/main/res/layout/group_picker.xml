@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EditText
+    android:id="@+id/group_name_et_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="text"
+    android:layout_marginLeft="20sp"
+    android:layout_marginRight="20sp"
+    android:maxLength="10"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+</EditText>

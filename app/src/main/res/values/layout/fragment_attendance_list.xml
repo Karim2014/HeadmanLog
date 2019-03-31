@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/fragment_attendance_list_toolbar">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    tools:text="Февраль"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_blue_24dp"
+                    android:drawableEnd="@drawable/ic_arrow_drop_down_blue_24dp"
+                    android:textColor="@color/mdtp_white"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:background="?selectableItemBackground"
+                    android:clickable="true"
+                    android:id="@+id/fragment_attendance_list_month_pick_tv"/>
+
+            </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.karim.headmanlog.RecyclerViewEmptySupport
+            android:id="@+id/fragment_attendance_list_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.karim.headmanlog.RecyclerViewEmptySupport>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fragment_attendance_list_empty_view"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="64dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="@string/no_att_int_this_month"/>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>

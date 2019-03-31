@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--  Кабинет не закреплен за преподом  -->
+        <LinearLayout style="@style/settings_item_lin_lay" android:id="@+id/fragment_settings_room_with_teacher_lin_lay">
+            <TextView style="@style/SettingsItem.TextView.WithCheckbox" android:text="@string/title.room_with_teacher"/>
+            <CheckBox style="@style/SettingsItem.CheckBox" android:id="@+id/fragment_settings_room_with_teacher_lin_lay_checkbox"/>
+        </LinearLayout>
+        <View style="@style/Separator"/>
+
+        <!--  Открывать панель ДОПОЛНИТЕЛЬНО сдвигом
+        <LinearLayout style="@style/settings_item_lin_lay">
+            <TextView style="@style/SettingsItem.TextView.WithCheckbox" android:text="@string/title.open_panel_additional_by_swipe"/>
+            <CheckBox style="@style/SettingsItem.CheckBox"/>
+        </LinearLayout>
+        <View style="@style/Separator"/>-->
+
+        <!-- Четность недель -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/fragment_settings_numeric_week_lin_lay">
+
+            <com.github.florent37.expansionpanel.ExpansionHeader
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fragment_settings_expansion_header"
+                app:expansion_toggleOnClick="false">
+
+                <LinearLayout style="@style/settings_item_lin_lay" android:clickable="false">
+                    <TextView android:text="@string/numeric_or_not_numeric" style="@style/SettingsItem.TextView.WithCheckbox"/>
+                    <Switch style="@style/SettingsItem.CheckBox" android:id="@+id/fragment_settings_expansion_header_switch"
+                            android:checked="true"/>
+                </LinearLayout>
+
+            </com.github.florent37.expansionpanel.ExpansionHeader>
+
+            <com.github.florent37.expansionpanel.ExpansionLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:expansion_expanded="true"
+                android:id="@+id/fragment_settings_expansion_lay">
+
+                <include layout="@layout/expanded_settings_item_up_week"/>
+            </com.github.florent37.expansionpanel.ExpansionLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

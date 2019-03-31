@@ -1,0 +1,131 @@
+<resources>
+    <string name="app_name">Журнал старосты</string>
+    <string name="main_btn_open_curr_month">Открыть текущий месяц</string>
+    <string name="main_btn_edit_students">Редактировать группу</string>
+    <string name="main_btn_choose_month">Изменить месяц</string>
+    <string name="main_btn_notes">Заметки</string>
+    <string name="std_view_about_stud">Студент</string>
+    <string name="std_view_hint_name">ФИО студента</string>
+    <string name="std_view_hint_name1">Имя студента</string>
+    <string name="std_view_hint_phone">Номер телефона</string>
+    <string name="menu_new_student">Новый студент</string>
+    <string name="menu_show_dialog_pick_group">Изменить название</string>
+    <string name="menu_hide_subtitle">Спрятать подзаголовок</string>
+    <string name="menu_subtitle_format">%1$s Студентов</string>
+    <string name="appbar_group">Одногруппники</string>
+    <string name="menu_accept_student">Добавить</string>
+    <string name="list_item_student_num_pp_format">%1$s)</string>
+    <string name="dialog_choose_current_month">Выберите месяц</string>
+    <string name="menu_item_new_day">Новый день</string>
+    <string name="delete">Удалить</string>
+    <string name="marks_hint">Успеваемость</string>
+    <string-array name="marks">
+        <item>Отлично</item>
+        <item>Хорошо</item>
+        <item>Удовл.</item>
+    </string-array>
+    <string name="save">Сохранить</string>
+    <string name="cancel">Отмена</string>
+    <string name="birthday">Дата рождения</string>
+    <string name="text_your_bell_schedule">Расписание звонков</string>
+    <string name="your_teachers">Ваши преподаватели</string>
+    <string name="your_subjects">Ваши дисципллины</string>
+    <string name="class_room_num">Номер аудитории:</string>
+    <string name="hint_number_room">Номер аудитории</string>
+    <string name="hint_FIO_prepoda">Новый преподаватель</string>
+    <string name="hint_subject_title">Название предмета</string>
+    <string name="title_activity_bottom_nav">Журнал старосты</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_group">Группа</string>
+    <string name="title_schedule">Расписание</string>
+    <string name="title_attending">Посещаемость</string>
+    <string name="title_money">Сборы</string>
+    <string name="title_notes">Заметки</string>
+    <string name="my_group">Моя группа</string>
+    <string name="hint_group_title">Введите название группы</string>
+    <string name="title.enter_group_title">Введите навзание группы</string>
+    <string name="title.teacher">Преподаватель</string>
+    <string name="title.enter_subject_title">Введите навзание предмета</string>
+    <string name="title.students_count">Количество студентов: %1$d</string>
+    <string name="title.std_excelent">Отличников: %1$d</string>
+    <string name="title.std_good">Хорошистов: %1$d</string>
+    <string name="title.std_bad">Троечников: %1$d</string>
+    <string name="title.couple_n_selfnum">%1$d. %2$s</string>
+    <string name="title.couple_num">Пара %1$s</string>
+    <string name="label.edit_schedule">Редактирование расписания</string>
+    <string name="title.room">%1$s ауд.</string>
+    <string name="title.add">Добавить</string>
+    <string name="title.del">Удалить</string>
+    <string name="additional">Дополнительно</string>
+    <string name="toast_exceed">Превышено количество возможных добавлений</string>
+    <string name="title.room_num">Аудитория: %1$s</string>
+    <string name="title.couple_num_day_week">%1$s %2$s</string>
+    <string name="no_study_time">Неучебное время</string>
+    <string name="error.change_bells_schedule">Измените расписание звонков</string>
+    <string name="title.teacher_num">%1$s, %2$s ауд.</string>
+    <string name="title.couple_num_title">Пара %1$s. %2$s</string>
+    <string name="no_couples">Нет пар по расписанию</string>
+    <string name="title.weekend">Выходной</string>
+    <string name="title.pause_time">Перемена между %1$d и %2$d парой</string>
+    <string name="title_activity_settings">Настройки</string>
+    <string name="title.open_panel_additional_by_swipe">Открывать панель &quot;<b>Дополнительно</b>&quot; свайпом</string>
+    <string name="title.room_with_teacher">Кабинет закреплен за преподавателем</string>
+    <string name="title.next_couple">Сл. %1$s</string>
+    <string name="title.next_couple_with_room">Сл. %1$s, %2$s ауд.</string>
+    <string name="title.absance_count">Пара %1$d. Отсутствуют %2$d из %3$d</string>
+    <string name="title.change">изменить</string>
+    <string name="No_absence">Отсутствующих нет</string>
+    <string name="title.confirmationDlg.del">Вы действительно хотите удалить данный элемент?</string>
+    <string name="title.dlg.chooseAction">Выберите необходимое действие</string>
+    <string name="confDlg.lookup">Просмотреть</string>
+    <string name="confDlg.del">Удалить</string>
+    <string name="create">Создать</string>
+    <string name="no_atts_create">На данный день еще не создано отметок. Нажмите на кнопку ниже, чтобы создать</string>
+    <string name="couple_num">Номер аудитории</string>
+    <string name="up_week">Знаменатель</string>
+    <string name="start_study_time">Дата начала учебного года</string>
+    <string name="isFirstWeek_Numeric">Первая неделя верхняя/числитель</string>
+    <string name="numeric_or_not_numeric">Четность/нечетность недель</string>
+    <string name="no_att_int_this_month">На данный месяц еще не созданно отметок</string>
+    <string name="cannt_add_couple">Невозможно добавить пару. Измените список дисциплин или преподавателей</string>
+    <string name="count_overflow">Превышено количество возможных добавлений!</string>
+    <string name="changes_apply">Изменения сохранены</string>
+    <string name="no_inf_ab_couples">Выходной</string>
+    <string-array name="spinner_ymd">
+        <item>День</item>
+        <item>Месяц</item>
+        <item>Год</item>
+    </string-array>
+    <string name="empty_couple">Окно</string>
+    <string name="TAG">Test</string>
+    <string name="just_couple_num">%1$d</string>
+    <string name="how_much_couples">Сколько пар у Вас сегодня?</string>
+    <string name="all_atts">Все отметки</string>
+    <string name="empty">Нет</string>
+    <string name="lecture_reducted">Лек.</string>
+    <string name="pract_reducted">Практ.</string>
+    <string name="lists">Списки</string>
+    <string name="rename">Изменить</string>
+    <string name="lists_label">Списки</string>
+    <string name="quest_del_couple">Вы действительно хотите удалить %1$d пару?</string>
+    <string-array name="days_of_the_week">
+        <item>Понедельник</item>
+        <item>Вторник</item>
+        <item>Среда</item>
+        <item>Четверг</item>
+        <item>Пятница</item>
+        <item>Суббота</item>
+        <item>Воскресенье</item>
+    </string-array>
+    <string-array name="context_simple">
+        <item>Изменить</item>
+        <item>Удалить</item>
+    </string-array>
+    <string name="couple_num_ft">Пара %1$d</string>
+    <string name="start">Начало</string>
+    <string name="end">Конец</string>
+    <string name="bell_schedule">Расписание звонков</string>
+    <string name="group">Группа</string>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="@string/all_atts"
+        android:icon="@drawable/ic_list_black_24dp"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:title="@string/group"
+        android:id="@+id/super_group"
+        app:showAsAction="never"
+        android:orderInCategory="1"
+        />
+
+</menu>

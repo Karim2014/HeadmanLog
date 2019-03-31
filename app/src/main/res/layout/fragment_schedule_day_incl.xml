@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/CardView.Light"
+    android:layout_margin="16dp"
+    android:id="@+id/fragment_schedule_day_more_ll">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/fragment_schedule_day_more_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:textAlignment="center"
+        android:textColor="@color/primaryColor"
+        android:textSize="21sp"
+        tools:text="10.08.2018 (Окт, пятница) \nЧислитель"/>
+
+    <TextView
+        android:id="@+id/fragment_schedule_day_more_couple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Пара 1. Документирование и сертификация"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_marginBottom="4dp"
+            android:textColor="@color/primaryColor"/>
+
+        <!--<TextView
+            android:id="@+id/fragment_schedule_day_more_room"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Ауд.167"
+            android:layout_marginBottom="4dp"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:textColor="@color/primaryColor"/>-->
+
+        <TextView
+            android:id="@+id/fragment_schedule_day_more_teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            tools:text="Хохлова Ольга Анатольевна"
+            android:textColor="@color/primaryColor"/>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

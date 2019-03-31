@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/coord_lay.fragment_schedule_bell">
+
+        <com.karimsabitov.headmanlog.UI.RecyclerViewEmptySupport
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="ifContentScrolls"
+            android:id="@+id/schedule_bell_recycler_view">
+
+        </com.karimsabitov.headmanlog.UI.RecyclerViewEmptySupport>
+
+    <com.karimsabitov.headmanlog.UI.TextViewFontSupport
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:customFont="@integer/FontRobotoLight"
+        android:textColor="@color/primaryDarkColor"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:text="Расписание звонков не задано"
+        android:id="@+id/empty_view"/>
+
+</android.support.design.widget.CoordinatorLayout>

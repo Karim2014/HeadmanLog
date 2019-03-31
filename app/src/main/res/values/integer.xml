@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="FontRobotoMedium">0</integer>
+    <integer name="FontRobotoRegular">1</integer>
+    <integer name="FontRobotoBold">2</integer>
+    <integer name="FontRobotoLight">3</integer>
+    <integer name="FontRobotoMediumItalic">4</integer>
+    <integer name="FontRobotoItalic">5</integer>
+</resources>

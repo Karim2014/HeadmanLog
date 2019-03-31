@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <com.karimsabitov.headmanlog.UI.TextViewFontSupport
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_bell_couple_num"
+            tools:text="Пара 1"
+            android:textSize="18sp"
+            app:customFont="@integer/FontRobotoLight"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/list_item_bell_time_tv"
+            android:layout_toStartOf="@+id/list_item_bell_time_tv"/>
+
+        <com.karimsabitov.headmanlog.UI.TextViewFontSupport
+            android:id="@+id/list_item_bell_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            app:customFont="@integer/FontRobotoLight"
+            android:textColor="@color/primaryDarkColor"
+            tools:text="8:15 - 9:35"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+    <View
+        android:id="@+id/separator"
+        style="@style/Separator"/>
+
+</LinearLayout>

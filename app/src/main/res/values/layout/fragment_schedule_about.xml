@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginBottom="?actionBarSize">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/fragment_schedule_about_lin_lay">
+
+        <include layout="@layout/appbar_schedule_edit"/>
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v4.view.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fragment_schedule_about_view_pager">
+
+            </android.support.v4.view.ViewPager>
+
+            <include layout="@layout/fragment_schedule_day_incl"/>
+
+        </android.support.design.widget.CoordinatorLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab.fragment_schedule_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_expand_more_white_24dp"
+        app:layout_anchor="@+id/fragment_edit_schedule_toolbar"
+        android:layout_marginTop="16dp"
+        app:fabSize="mini"
+        app:rippleColor="@android:color/white"
+        app:layout_anchorGravity="bottom|center"/>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#546e7a</color>
+    <color name="primaryLightColor">#2979ff</color>
+    <color name="secondaryLightColor">#2962ff</color>
+    <color name="tab_item_color">#ff5722</color>
+    <color name="primaryDarkColor">#455a64</color>
+    <color name="primaryTextColor">#212121</color>
+    <color name="secondaryTextColor">#727272</color>
+    <color name="colorHint">#ababab</color>
+</resources>

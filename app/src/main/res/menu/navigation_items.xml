@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="@string/title_schedule"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:id="@+id/navigation_schedule"/>
+
+    <item
+        android:title="@string/title_attending"
+        android:icon="@drawable/ic_check_black_24dp"
+        android:id="@+id/navigation_attending"/>
+
+    <item
+        android:title="@string/title_group"
+        android:icon="@drawable/ic_group_black_24dp"
+        android:id="@+id/navigation_group"/>
+
+    <!--<item
+        android:title="@string/title_money"
+        android:icon="@drawable/ic_attach_money_black_24dp"
+        android:id="@+id/navigation_money"/>
+
+    <item
+        android:title="@string/title_notes"
+        android:icon="@drawable/ic_event_note_black_24dp"
+        android:id="@+id/navigation_notes"/>-->
+</menu>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/month_list_add_item"
+          android:title="@string/menu_accept_student"
+          android:icon="@drawable/ic_action_name"
+          app:showAsAction="ifRoom|withText"/>
+
+
+</menu>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/CardView"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="8dp">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:background="?attr/selectableItemBackground">
+
+    <com.github.florent37.expansionpanel.ExpansionHeader
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_item_expandable_edit_schedule_expansion_header"
+        app:expansion_toggleOnClick="true"
+        android:clickable="true"
+        android:background="?attr/selectableItemBackground">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/list_item_expandeble_edit_schedule_title"
+                tools:text="1 пара"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                android:textSize="20sp"
+                android:textColor="@color/primaryColor"/>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_height="wrap_content"
+                android:rotation="90"
+                android:id="@+id/list_item_expandable_edit_schedule_arrow"
+                app:srcCompat="@drawable/ic_arrow_drop_down_black_24dp"
+                android:layout_margin="8dp"/>
+
+        </LinearLayout>
+
+    </com.github.florent37.expansionpanel.ExpansionHeader>
+
+    <com.github.florent37.expansionpanel.ExpansionLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:expansion_expanded="false"
+        android:id="@+id/list_item_expandable_edit_schedule_expansion_lay">
+
+        <include layout="@layout/expanded_list_item_edit_schedule"/>
+
+    </com.github.florent37.expansionpanel.ExpansionLayout>
+
+</LinearLayout>
+</android.support.v7.widget.CardView>

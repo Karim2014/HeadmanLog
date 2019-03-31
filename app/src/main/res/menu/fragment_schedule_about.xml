@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<item app:showAsAction="never"
+            android:id="@+id/menu_item_settings"
+          android:title="Найстроки"
+          />-->
+
+    <item app:showAsAction="never"
+          android:id="@+id/menu_item_lists"
+        android:title="@string/lists"/>
+
+    <item android:id="@+id/menu_item_schedule"
+          android:title="@string/bell_schedule"
+          android:icon="@drawable/ic_schedule_white_24dp"
+          app:showAsAction="ifRoom"
+          android:orderInCategory="2"
+        />
+
+    <item
+        android:title="@string/group"
+        android:id="@+id/super_group"
+        app:showAsAction="never"
+        android:orderInCategory="1"
+        />
+
+</menu>

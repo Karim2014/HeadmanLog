@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.karimsabitov.headmanlog.UI.TextViewFontSupport
+            android:id="@+id/list_item_schedule_couple_cnum_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:textColor="@color/primaryColor"
+            android:textSize="16sp"
+            app:customFont="@integer/FontRobotoLight"
+            tools:text="Пара 1\n8:15\n9:35"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.karimsabitov.headmanlog.UI.TextViewFontSupport
+                    android:id="@+id/list_item_schedule_couple_empty_couple"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/empty_couple"
+                    android:textColor="@color/primaryDarkColor"
+                    android:textSize="18sp"
+                    app:customFont="@integer/FontRobotoRegular"/>
+
+                <LinearLayout
+                    android:id="@+id/list_item_schedule_couple_up_info_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.karimsabitov.headmanlog.UI.TextViewFontSupport
+                            android:id="@+id/list_item_schedule_couple_subject"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/primaryColor"
+                            android:textSize="18sp"
+                            app:customFont="@integer/FontRobotoRegular"
+                            tools:text="Дисцuhuhuhuhuhuhuhuhhиплина"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_toLeftOf="@+id/list_item_schedule_couple_toc_up"
+                            android:layout_toStartOf="@+id/list_item_schedule_couple_toc_up"/>
+
+                        <com.karimsabitov.headmanlog.UI.TextViewFontSupport
+                            android:id="@+id/list_item_schedule_couple_toc_up"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            app:customFont="@integer/FontRobotoLight"
+                            tools:text="Ghfrn."
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/list_item_schedule_couple_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <com.karimsabitov.headmanlog.UI.TextViewFontSupport
+                            android:id="@+id/list_item_schedule_couple_teacher_n_room"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_toLeftOf="@+id/list_item_schedule_couple_room"
+                            android:layout_toStartOf="@+id/list_item_schedule_couple_room"
+                            android:textColor="@color/primaryColor"
+                            android:textSize="15sp"
+                            app:customFont="@integer/FontRobotoLight"
+                            tools:text="Bзмалквова Елена Леонгидовна"/>
+
+                        <com.karimsabitov.headmanlog.UI.TextViewFontSupport
+                            android:id="@+id/list_item_schedule_couple_room"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            app:customFont="@integer/FontRobotoLight"
+                            tools:text="155 ауд"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </android.support.design.widget.CoordinatorLayout>
+
+            <View
+                style="@style/Separator"
+                android:layout_marginTop="8dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.karimsabitov.headmanlog.UI.TextViewFontSupport
+                    android:id="@+id/list_item_schedule_couple_subject_down"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="18sp"
+                    app:customFont="@integer/FontRobotoRegular"
+                    tools:text="Дисциплина"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_toLeftOf="@+id/list_item_schedule_couple_toc_down"
+                    android:layout_toStartOf="@+id/list_item_schedule_couple_toc_down"/>
+
+                <com.karimsabitov.headmanlog.UI.TextViewFontSupport
+                    android:id="@+id/list_item_schedule_couple_toc_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="12sp"
+                    app:customFont="@integer/FontRobotoLight"
+                    tools:text="Лек."
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/list_item_schedule_couple_lay_down"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <com.karimsabitov.headmanlog.UI.TextViewFontSupport
+                    android:id="@+id/list_item_schedule_couple_teacher_n_room_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="15sp"
+                    app:customFont="@integer/FontRobotoLight"
+                    tools:text="Препод"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_toLeftOf="@+id/list_item_schedule_couple_room_down"
+                    android:layout_toStartOf="@+id/list_item_schedule_couple_room_down"/>
+
+                <com.karimsabitov.headmanlog.UI.TextViewFontSupport
+                    android:id="@+id/list_item_schedule_couple_room_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    app:customFont="@integer/FontRobotoLight"
+                    tools:text="155 ауд"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="8dp"
+        style="@style/Separator"/>
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Дисциплина"
+        android:textColor="@color/primaryColor"
+        android:textSize="22sp"
+        android:id="@+id/list_item_schedule_couple_subject"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:id="@+id/list_item_schedule_couple_lay">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/primaryColor"
+            android:id="@+id/list_item_schedule_couple_teacher_n_room"
+            tools:text="Препод"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/list_item_schedule_couple_room"
+            tools:text="155 ауд"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/Separator"
+        android:layout_marginTop="8dp"
+        android:id="@+id/list_item_schedule_couple_view"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/list_item_schedule_couple_lay_down_week">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Дисциплина"
+        android:textColor="@color/primaryColor"
+        android:textSize="22sp"
+        android:id="@+id/list_item_schedule_couple_subject_down"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:id="@+id/list_item_schedule_couple_lay_down">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/primaryColor"
+            android:id="@+id/list_item_schedule_couple_teacher_n_room_down"
+            tools:text="Препод"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/list_item_schedule_couple_room_down"
+            tools:text="155 ауд"/>
+    </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

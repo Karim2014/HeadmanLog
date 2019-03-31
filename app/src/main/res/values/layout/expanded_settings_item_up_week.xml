@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <!-- Дата начала уч. года -->
+    <LinearLayout style="@style/settings_item_lin_lay.vertical">
+        <TextView style="@style/SettingsItem.TextView" android:text="@string/start_study_time"/>
+        <TextView style="@style/SettingsItem.TextView" android:text="1"/>
+    </LinearLayout>
+    <View style="@style/Separator"/>
+
+    <!-- Первая неделя верхняя -->
+    <LinearLayout style="@style/settings_item_lin_lay">
+        <TextView style="@style/SettingsItem.TextView.WithCheckbox" android:text="@string/isFirstWeek_Numeric"/>
+        <CheckBox style="@style/SettingsItem.CheckBox"/>
+    </LinearLayout>
+    <View style="@style/Separator"/>
+
+
+</LinearLayout>

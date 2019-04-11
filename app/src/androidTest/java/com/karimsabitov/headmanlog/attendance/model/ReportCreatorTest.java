@@ -18,16 +18,15 @@ public class ReportCreatorTest {
     public void init() throws Exception {
         List<Date> dateList = new ArrayList<>();
 
-        dateList.add(new Date());
-        dateList.add(CalendarParser.getDate(2019, 3, 8));
-        dateList.add(CalendarParser.getDate(2019, 3, 7));
-        dateList.add(CalendarParser.getDate(2019, 3, 6));
-        dateList.add(CalendarParser.getDate(2019, 3, 5));
-        dateList.add(CalendarParser.getDate(2019, 3, 4));
+        //dateList.add(new Date());
+        for (int i = 1; i <= 24; i++) {
+            dateList.add(CalendarParser.getDate(2018, 11, i)); // march
+        }
 
         ReportCreator reportCreator = new ReportCreator();
         reportCreator.setDates(dateList);
-        reportCreator.init();
+        reportCreator.init("ПКС-15", "Декабрь", "2018");
+        reportCreator.startSelectStudents();
         try {
             reportCreator.saveReport();
         }catch (IOException e){
